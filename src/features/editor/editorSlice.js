@@ -3,12 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 export const editorSlice = createSlice({
     name: 'editor',
     initialState: {
-        value: ''
+        value: '',
+        preview: '',
     },
     reducers: {
         replaceText: (state, action) => {
-            state.value = action.payload
-        }
+            state.value = action.payload;
+            state.preview = state.value
+        },
     }
 })
 

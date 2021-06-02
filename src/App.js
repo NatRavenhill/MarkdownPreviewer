@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useEffect } from 'react';
 import Editor from './features/editor/Editor';
+import Preview from './features/editor/Preview';
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Editor />
+      <Preview />
     </div>
   );
 }
