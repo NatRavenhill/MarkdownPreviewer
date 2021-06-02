@@ -9,8 +9,8 @@ export const editorSlice = createSlice({
     reducers: {
         replaceText: (state, action) => {
             state.value = action.payload;
-            state.preview = state.value
-        },
+            state.preview = action.payload;
+        }
     }
 })
 
