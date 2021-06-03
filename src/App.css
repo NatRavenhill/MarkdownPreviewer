@@ -1,5 +1,22 @@
 .App {
-  text-align: center;
+  margin: auto;
 }
 
+#preview {
+  border: black;
+  background: whitesmoke;
+  margin: 1em;
+  padding: 2em;
+  border-style: dotted;
+}
 
+#editor {
+  display: block;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
