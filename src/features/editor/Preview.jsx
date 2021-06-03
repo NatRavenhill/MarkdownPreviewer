@@ -8,6 +8,7 @@ const Preview = () => {
   const [markdown, setMarkdown] = useState("");
 
   useEffect(() => {
+    marked.setOptions({ breaks: true});
     setMarkdown(marked(preview));
   }, [preview]);
 
